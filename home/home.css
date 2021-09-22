@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	position: relative;
+	height: 100%;
+}
+body {
+	/* background: rgb(228, 106, 106); */
+	color: #000;
+	margin: 0;
+	padding: 0;
+}
+
+.title {
+	margin-left: auto;
+	margin-right: auto;
+	margin: 4rem;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 6rem;
+	font-family: "DM Serif Display", serif;
+	letter-spacing: 2px;
+}
+
+.sectionHome {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+}
+
+.swiper {
+	width: 70%;
+	/* height: 80%; */
+	margin: 1%;
+	position: relative;
+	border-radius: 20px;
+	margin-left: auto;
+}
+
+.image {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	background-color: #020125;
+}
+
+.slideTile::after {
+	content: "Digitran IT";
+	top: 0;
+	left: 0;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	
+	color: rgb(0, 0, 0);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 6rem;
+	font-weight: 700;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.swiper-slide img {
+	
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.newsHome {
+	width: 25%;
+	height: 83.5vh;
+	margin: 15px 27px;
+	background-color: #617de3;
+	display: flex;
+	flex-direction: column;
+	border-radius: 20px;
+}
+
+.newsh1 {
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+	margin: 10px;
+}
+.newsdiv {
+	display: flex;
+}
+
+.newsBox {
+	background-color: #fff;
+	width: 70%;
+	text-align: justify;
+	height: 45px;
+	margin: 1rem;
+	border-radius: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.gridHome {
+	width: 100%;
+	display: grid;
+	grid-column-gap: 0%;
+	grid-template-columns: repeat(5, 1fr);
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+.griddiv {
+	width: 100%;
+	height: 250px;
+	background-color: #020125;
+	margin: 0;
+	color: rgb(255, 255, 255);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 36px;
+	font-weight: 700;
+	font-family: "DM Sans", sans-serif;
+	padding: 0;
+}
+.griddiv:nth-last-of-type(even) {
+	background-color: rgb(255, 255, 255);
+}
+
+.gridOdd,.gridEven{
+	position: relative;
+	overflow: hidden;
+}
+
+.gridOdd
+{
+	background-color: #020125;
+}
+
+.gridOdd::after {
+	content:'';
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-color: white;
+}
+
+.gridEven::after {
+	content:'';
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transform: translateX(0);
+	background-color: #020125;
+}
+
+.portfolioatag {
+	font-family: "DM Serif Display", serif;
+	font-size: 5rem;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	display: flex;
+	justify-content: center;
+	background-color: #FCECA4;
+	padding: 5rem;
+	margin: 0;
+}
+.portfoliodiv {
+	width: 100%;
+	height: 100%;
+}
+
+.imagePortfolio {
+	width: 100%;
+	height: 80%;
+}
+
+.blurportfolio {
+	position: relative;
+}
+
+.blurportfolio::after {
+	content: "Where Man meet Multiprocessing";
+	top: 0;
+	left: 0;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	
+	color: rgb(0, 0, 0);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3rem;
+	font-weight: 700;
+}
+
+.careeratag {
+	font-family: "DM Serif Display", serif;
+	font-size: 5rem;
+	padding: 3rem;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	display: flex;
+	justify-content: center;
+	letter-spacing: 2px;
+}
+
+.career {
+	height: 100vh;
+	background-color: #f9efff;
+}
+
+@media (max-width:400px) {
+	.sectionHome
+	{
+		flex-direction: column-reverse;
+	}
+	.newsHome
+	{
+		position: relative;
+		left: 5%;
+		width: 90%;
+		border-radius: 5px;
+		margin: 5% 0 0 0;
+	}
+	.swiper
+	{
+		width: 90%;
+		margin-right: 0;
+		display: flex;
+		align-self: center;
+		margin: 5% 0 0 0;
+	}
+	.griddiv
+	{
+		width: 100%;
+		font-size: 5px;
+		height: 100px;
+		display: flex;
+		font-size: 14px;
+	}
+	.gridicon1
+	{
+		display: none;
+	}
+	.title
+	{
+		margin: 32px 32px 0px 32px;
+	}
+	.gridHome
+	{
+		grid-template-columns: repeat(3, 1fr);;
+	}
+}

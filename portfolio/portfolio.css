@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap%22");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+   font-family: 'DM Serif Display', serif;
+}
+body {
+	background-color: #fde049;
+}
+.navMain .content {
+	box-shadow: 0px 0px 140px 1px rgba(0, 0, 0, 0) !important;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 50px;
+}
+.portfolioTitle {
+	position: relative;
+	text-align: center;
+	padding-top: 70px;
+	text-transform: uppercase;
+	font-size: 5rem;
+	letter-spacing: 5px;
+}
+.slideContainer {
+   overflow-x: hidden;
+
+}
+.slide {
+   background-color: #020125;
+   height: 700px;
+   width: 80%;
+   color: white;
+   position: relative;
+   margin: 15rem 0;
+   
+}
+.slide:nth-child(1) {
+   margin-top: 7rem;
+}
+.slide1 {
+   left: 20%;
+
+}
+.slide2 {
+   left: 0%;
+}
+.slide3 {
+
+   left: 20%;
+
+}
+.slideTitle {
+   text-align: center;
+   font-size: 4rem;
+   letter-spacing: 6px;
+   padding: 5rem;
+   
+}

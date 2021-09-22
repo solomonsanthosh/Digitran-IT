@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Work Sans', sans-serif;
+}
+
+.serviceSection-1 {
+	position: relative;
+	display: flex;
+}
+.logoServices {
+	position: absolute;
+	left: 4.5%;
+}
+.title {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 30px;
+	font-family: "DM Serif Display", serif !important;
+	position: relative;
+	text-align: center;
+	padding-top: 70px;
+	text-transform: uppercase;
+	font-size: 4rem;
+	letter-spacing: 2px;
+}
+
+.serviceIcons {
+	width: 100px;
+	height: 100px;
+	margin-top: 5px;
+}
+
+.servicesProductsh1 {
+	font-family: "DM Serif Display", serif;
+	font-size: 45px;
+	text-align: center;
+	margin: 60px;
+}
+
+.gridMain {
+	display: grid;
+	position: relative;
+	grid-template-columns: 1fr 1fr;
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	justify-items: center;
+	overflow-x: hidden;
+}
+
+.gridBox {
+	width: 90%;
+	text-align: center;
+	margin: 10px;
+}
+
+
+.gridBox1 , .gridBox3,  .gridBox5 , .gridBox7 , .gridBox9
+{
+	position: relative;
+	transform: translateX(-550px);
+}
+
+.gridBox2 , .gridBox4 , .gridBox6 , .gridBox8 , .gridBox10
+{
+	position: relative;
+	transform: translateX(550px);
+}
+
+.gridBox h3 {
+	font-size: 25px;
+}
+.gridBox p {
+	line-height: 1.8rem;
+	padding: 5% 12%;
+}
+
+
+@media (max-width : 400px) {
+	.gridMain
+	{
+		grid-template-columns: 1fr;
+	}
+	.logoServices
+	{
+		display: none;
+	}
+	.servicesProductsh1
+	{
+		display: none;
+	}
+	
+	.gridBox h3
+	{
+		font-size: 35px;
+	}
+	.gridBox p
+	{
+		font-size: 20px;
+		text-align: justify;
+		/* letter-spacing: 1px; */
+	}
+	.gridMain
+	{
+		width: 100%;
+	}
+	.gridBox p
+	{
+		padding: 5%;
+	}
+
+	footer
+	{
+		min-width: 300px;
+		flex-wrap: wrap;
+	}
+}

@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap%22");
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.title {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    font-family: "DM Serif Display", serif;
+    letter-spacing: 2px;
+}
+
+.careerPage
+{
+    height: 200vh;
+    background: url("./img/img1.png") center/cover;
+    color: #fff;
+}
